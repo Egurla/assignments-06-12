@@ -20,9 +20,9 @@ public class Test_Person {
 		Address address6 = new Address("KADAPA", "AP");
 
 		List<Person> list = new ArrayList<Person>();
-		list.add(new Person(101, "kumar", "chette", address1));
+		list.add(new Person(101, "RAM", "chette", address1));
 		list.add(new Person(102, "raj", "chinta", address2));
-		list.add(new Person(103, "chinna", "kacha", address3));
+		list.add(new Person(103, "china", "kacha", address3));
 		list.add(new Person(104, "mallesh", "mamidala", address4));
 		list.add(new Person(105, "saketh", "ch", address5));
 		list.add(new Person(106, "rajesh", "kommuala", address6));
@@ -58,7 +58,7 @@ System.out.println("------------------------------------------------------------
 
 		List<Person> listofpersons = new ArrayList<Person>();
 		listofpersons.add(new Person(101, "kumar", "chette", address1));
-		listofpersons.add(new Person(102, "jj", "chinta", address2));
+		listofpersons.add(new Person(102, "RAM", "chinta", address2));
 		listofpersons.add(new Person(103, "chinna", "kacha", address3));
 		listofpersons.add(new Person(104, "mallesh", "mamidala", address4));
 		listofpersons.add(new Person(105, "saketh", "ch", address5));

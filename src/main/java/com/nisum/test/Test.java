@@ -1,6 +1,8 @@
 package com.nisum.test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Map;
 
 import com.nisum.EachCharCountInArrayList;
 import com.nisum.FindOccuOfEachString;
@@ -8,11 +10,14 @@ import com.nisum.FindOccuOfEachString;
 public class Test {
 	public static void main(String[] args)
     {
-		
-		  ArrayList<String> list=new ArrayList<String>();
-		  list.add(" Java python Java .net J2EE ");
-		  EachCharCountInArrayList.characterCount(list);
+		String quoteArray[] = { "Continuous", "effort", "not", "strength",
+	            "nor", "intelligence", "is", "the", "key", "to", " unlocking",
+	            "our", "potential" };
+		  ArrayList<String> list=new ArrayList<String>(Arrays.asList(quoteArray));
 		 
+		Map<Character, Integer> eachchar= EachCharCountInArrayList.characterCount(list);
+		 System.out.println(eachchar);
+		 System.out.println("-----------------------------");
        
     	FindOccuOfEachString findOccuOfEachString=new FindOccuOfEachString();
     	ArrayList<String> findOccerance = new ArrayList<String>();
@@ -21,6 +26,8 @@ public class Test {
     	findOccerance.add("chinna");
     	findOccerance.add("chinna");
     	findOccerance.add("kumar");
-    	findOccuOfEachString.countFrequencies(findOccerance);
+    Integer count =FindOccuOfEachString.countFrequencies(findOccerance);
+    	System.out.println();
     }
+	
 }

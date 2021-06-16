@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FindOccuOfEachString {
-	public static void countFrequencies(ArrayList<String> list)
+	public static Integer countFrequencies(ArrayList<String> list)
     {
         Map<String, Integer> hm = new HashMap<String, Integer>();
   
@@ -20,5 +20,6 @@ public class FindOccuOfEachString {
                                + "occurs"
                                + ": " + val.getValue() + " times");
         }
+		return null;
     }
 }
